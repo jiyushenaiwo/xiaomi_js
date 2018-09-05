@@ -43,6 +43,7 @@ body{
 }
 .text a{
 	color: #b0b0b0;
+	font-size: 14px;
 }
 .text a:hover{
 	color: #fff;
@@ -326,6 +327,26 @@ body{
 	float: left;
 	background: #888;
 }
+.xuangou_liu{
+	width: 234px;
+	height: 170px;
+	background-color: #5F5750;
+	float: left;
+}
+.groom .box ul li{
+	width: 100px;
+	height: 50%;
+	float: left;
+}
+.groom .box ul li img{
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+.groom .box ul li span{
+	font-size: 16px;
+	display: block;
+}
 .groom .box1 img{
 	width: 301px;
 	height: 170px;
@@ -355,26 +376,39 @@ body{
 	right: 20px;
 }
 .rush_btn{
-	width: 14px;
+	width: 33px;
 	height: 22px;
 	background-color: #fff;
 	float: left;
-	/*margin-top: 17px;*/
 	border: 1px solid #E0E0E0;
+	color: #e0e0e0;
+	/*margin-top: 17px;*/
+
 }
 .rush_btn:hover{
 	background-color: #FF6700;
 }
+.rush_btn img {
+	width: 20px;
+	height: auto;
+	margin: 0 auto;
+
+}
 .rush_btn1{
-	width: 14px;
+	width: 33px;
 	height: 22px;
-	border-left: 1px solid #E0E0E0;
+	border: 1px solid #E0E0E0;
 	background-color: #fff;
 	float: right;
 	color:black;
 }
 .rush_btn1:hover{
 	background-color: #FF6700;
+}
+.rush_btn1 img{
+	width: 20px;
+	height: auto;
+	margin: 0 auto ;
 }
 .rush .title {
 	width: 1226px;
@@ -411,6 +445,7 @@ body{
 	width: 2960px;
 	/*overflow: hidden;*/
 	height: 340px;
+	transition: all 1s;
 }
 .rush_metter_box img{
 	width: 234px;
@@ -481,6 +516,7 @@ body{
 .zhineng_bottom{
 	width: 100%;
 	height: 614px;
+	position: relative;
 	
 }
 .zhineng_left{
@@ -502,6 +538,12 @@ body{
 	width: 234px;
 	height: 300px;
 	float: left;
+}
+.box_jiadian{
+	/*position: absolute;*/
+	/*top: 0;*/
+	/*right: 0;*/
+	display: none;
 }
 .zhineng_right{
 	width: 992px;
@@ -605,31 +647,18 @@ margin-top: 20px;
 	float: right;
 }
 .dapei_wenzi span{
-	color: #49494C;
+	/*color: #49494C;*/
 	font-size: 16px;
 	margin-right: 22px;
 	cursor: pointer;
+	line-height: 10px;
+	display: inline-block;
+	height: 20px;
 }
-.dapei_wenzi span1{
-	margin-right: 30px;
-	color: #ff6700;
-	border-bottom: 2px solid #ff6700;
-	font-size: 16px;
-	cursor: pointer;
-}
-.dapei_wenzi span1:hover {
-	color: orange;
-}
-.dapei_wenzi span:hover {
-	color: orange;
-}
-.dapei_wenzi span2:hover {
-	color: orange;
-}
-.dapei_wenzi span2{
-	color: #49494C;
-	font-size: 16px;
-	cursor: pointer;
+.xiaoguochumo {
+	padding-bottom: 2px;
+	border-bottom: 2px solid #FF6700;
+	color: #FF6700;
 }
 .star{
 	width: 1226px;	
@@ -655,42 +684,43 @@ margin-top: 20px;
 	width: 66px;
 	height: 22px;
 	position: absolute;
-	top: 17px;
+	top: 20px;
 	right: 20px;
 }
 .star_btn{
-	width: 14px;
+	width: 33px;
 	height: 22px;
 	background-color: #fff;
 	float: left;
-	/*margin-top: 17px;*/
 	border: 1px solid #E0E0E0;
+	color: #e0e0e0;
+	/*margin-top: 17px;*/
+
 }
 .star_btn:hover{
 	background-color: #FF6700;
 }
-.star_btn div{
-	width:33px;
-	height: 22px;
-	text-align: center;
-	line-height: 22px;
-	float: left;
-	color: #E2E0E0;
-	font-size: 21px;
-	float: left;
-	font-weight: 400;
-	cursor: pointer;
+.star_btn img {
+	width: 20px;
+	height: auto;
+	margin: 0 auto;
+
 }
 .star_btn1{
-	width: 14px;
+	width: 33px;
 	height: 22px;
-	border-left: 1px solid #E0E0E0;
+	border: 1px solid #E0E0E0;
 	background-color: #fff;
 	float: right;
 	color:black;
 }
 .star_btn1:hover{
 	background-color: #FF6700;
+}
+.star_btn1 img{
+	width: 20px;
+	height: auto;
+	margin: 0 auto ;
 }
 .star_bottom{
 	width: 100%;

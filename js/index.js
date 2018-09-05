@@ -66,6 +66,28 @@ window.onload=function () {
             bannerNav[i].style.display="none";
         }
     }
+//家电
+    function f(name) {
+        let span=document.querySelectorAll(".dapei_wenzi span");
+        let jiadianhe=document.querySelectorAll(".box_jiadian ");
+        jiadianhe[0].style.display="block";
+        span[0].className=("xiaoguochumo")
+        for(let i=0;i<span.length;i++){
+            span[i].onmouseenter=function () {
+                for(let j=0;j<span.length;j++){
+                    jiadianhe[j].style.display="none";
+                    span[j].className=(".dapei_wenzi span");
+                }
+                jiadianhe[i].style.display="block";
+                span[i].className=("xiaoguochumo")
+            }
+        }
+    }
+    let jiadian=document.querySelector(".dapei_wenzi");
+    f(jiadian);
+
+
+
 
 function Recommend(milist,w,right,left) {
     let times=0;
