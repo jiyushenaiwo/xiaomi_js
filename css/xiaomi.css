@@ -387,7 +387,7 @@ body{
 .rush .metter{
 	width: 1226px;
 	height: 340px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .rush .metter .title{
 	float: left;
@@ -400,6 +400,12 @@ body{
 .rush .metter .title a img{
 	width: 234px;
 	height: 340px;
+}
+.metter_box{
+	float: right;
+	width: 978px;
+	height: 340px;
+	overflow: hidden;
 }
 .rush_metter_box{
 	width: 2960px;
