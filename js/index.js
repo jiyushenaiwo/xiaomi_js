@@ -39,7 +39,7 @@ window.onload=function () {
     let leftt=document.querySelectorAll(".star_btn");
 //小米闪购效果声明
     let milist1=document.querySelectorAll(".rush_metter_box")[0];
-    let w1=parseInt(getComputedStyle(milist,null).width)/3;
+    let w1=parseInt(getComputedStyle(milist1,null).width)/3;
     let rightt1=document.querySelectorAll(".rush_btn1");
     let leftt1=document.querySelectorAll(".rush_btn");
 //购物车
@@ -60,7 +60,6 @@ window.onload=function () {
     for(let i=0;i<lis.length;i++){
         lis[i].onmouseenter=function () {
             bannerNav[i].style.display="block";
-            console.log(i);
         }
         lis[i].onmouseleave=function () {
             bannerNav[i].style.display="none";
@@ -86,9 +85,30 @@ window.onload=function () {
     let jiadian=document.querySelector(".dapei_wenzi");
     f(jiadian);
 
-
-
-
+//导航
+    let lis1=document.querySelectorAll(".title_a");
+    let bannerNav1=document.querySelectorAll(".nav-hover");
+    for(let i=0;i<lis1.length;i++){
+        lis1[i].onmouseenter=function () {
+            bannerNav1[i].style.height="228px";
+        }
+        lis1[i].onmouseleave=function () {
+            bannerNav1[i].style.height="0";
+        }
+    }
+//视频移入效果
+    let bigbox=document.querySelectorAll(".shipin_bottom");
+    let sambox=document.querySelectorAll(".shipin_bottom span");
+    for (let i=0;i<bigbox.length;i++){
+        bigbox[i].onmouseenter=function(){
+            sambox[i].style.border="0";
+            sambox[i].style.background="orangered";
+        }
+        bigbox[i].onmouseleave=function(){
+            sambox[i].style.border=" 2px solid #fff";
+            sambox[i].style.background="rgba(0, 0, 0, 0.6)";
+        }
+    }
 function Recommend(milist,w,right,left) {
     let times=0;
     right[0].onclick=function () {
@@ -239,4 +259,6 @@ banner.onmouseleave=function(){
     center(img4,dots4,banner4,left4,right4,widths4);//内容4
     Recommend(milist,w,rightt,leftt);
     Recommend(milist1,w1,rightt1,leftt1);
+    console.log(w1);
+    console.log(milist1);
 }
